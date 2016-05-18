@@ -1,0 +1,10 @@
+@require "./a/base";
+@require "./variables";
+
+body {
+  line-height: ceil($one); // fails when all imports are relative: ./
+}
+
+div {
+  line-height: ceil($two); // fails when all imports are ~ relative: ~./
+}
